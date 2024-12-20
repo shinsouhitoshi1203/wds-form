@@ -1,12 +1,15 @@
 import './sass/app.scss';
+import { useContext } from 'react';
 import { Form, Login, Logup } from './Form';
+import AppContext from './contexts/AppContext';
 function App() {
+    const { logState } = useContext(AppContext);
     return (
     <>
-        <div className="container">
+        <div className="formlog__container">
             <Form>
-                <Login />
-                <Logup />
+                {logState=="login" && <Login />}
+                {logState=="logup" && <Logup />}
             </Form>
         </div>
     </>

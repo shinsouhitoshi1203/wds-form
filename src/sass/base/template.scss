@@ -1,0 +1,14 @@
+@use "./../abstracts" as a;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {font-size: 62.5%;}
+body {
+    font: {size: 1.8rem; family: 'Inter Tight', sans-serif};
+    color: a.$txt1;
+}
+
+input, button {color: inherit; background: inherit; border: none; outline: none; font: inherit; padding: 0;}
+
+button {cursor: pointer;}
+
+

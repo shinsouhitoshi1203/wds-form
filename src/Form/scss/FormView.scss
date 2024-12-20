@@ -1,0 +1,39 @@
+@use "./../../sass/abstracts" as a;
+@use "./../../sass/components/form" as f;
+%header {
+    font: {weight: 700; size: 2.8rem;} color: a.$txt3;
+    text-align: center;
+}
+
+.formlog{
+    &__title {
+        @extend %header;
+    }
+    &__input {
+        display: grid; grid-gap: 10px;
+        font-size: 1.4rem; 
+        span {font-weight: 500;}
+        input {
+            font-size: 1.6rem;
+            padding: 10px;
+            border: 1px solid a.$bd;
+            border-radius: a.$rs;
+            &:focus {
+                border-color: a.$second;
+                outline: 2px solid a.$second;
+            }
+        }
+    }
+    &__btn {
+        font-size: 1.6rem; font-weight: 600;
+        padding: 10px 20px;
+
+        border-radius: a.$rs;
+        background: a.$main;
+        color: a.$third;
+        cursor: pointer;
+        &:hover {
+            background: a.$main-hover;
+        }
+    }
+}
