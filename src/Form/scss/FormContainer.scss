@@ -25,7 +25,7 @@
         font-weight: 600;
         color: a.$txt1;
 
-        &[isChoosed="ok"] {
+        &[ischoosed="ok"] {
             background: a.$main-trans;
             color: a.$main;
             border: 1px solid currentColor;
